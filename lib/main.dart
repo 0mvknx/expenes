@@ -61,13 +61,13 @@ class _MyHomePageState extends State<MyHomePage> {
     Transaction(
       id: 't2',
       title: 'Conta de Luz',
-      value: 2221.20,
+      value: 221.20,
       date: DateTime.now().subtract(Duration(days: 4)),
     ),
     Transaction(
       id: 't3',
       title: 'CC',
-      value: 100000.20,
+      value: 102200.20,
       date: DateTime.now(),
     ),
     Transaction(
@@ -100,10 +100,11 @@ class _MyHomePageState extends State<MyHomePage> {
 
   _openTransactionFormModal(BuildContext context) {
     showModalBottomSheet(
-        context: context,
-        builder: (_) {
-          return TransactionForm(_addTransaction);
-        });
+      context: context,
+      builder: (_) {
+        return TransactionForm(_addTransaction);
+      },
+    );
   }
 
   @override
